@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import worker from 'mocks/browser';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import App from './App';
 
 // MUI FONT IMPORT
@@ -14,8 +15,20 @@ worker.start({
   onUnhandledRequest: 'warn',
 });
 
+// React Query Client
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      suspense: true,
+      useErrorBoundary: true,
+    },
+  },
+});
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
   </React.StrictMode>,
 );

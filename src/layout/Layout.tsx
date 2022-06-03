@@ -1,14 +1,10 @@
-import { ErrorBoundary } from 'react-error-boundary';
-import { useNavigate } from 'react-router-dom';
-import Error from '@common';
+import ErrorQueryBoundary from './ErrorQueryBoundary';
 
 function Layout() {
-  const navigate = useNavigate();
-
   return (
-    <ErrorBoundary FallbackComponent={Error} onReset={() => navigate('/')}>
+    <ErrorQueryBoundary>
       <p>Body</p>
-    </ErrorBoundary>
+    </ErrorQueryBoundary>
   );
 }
 
