@@ -1,9 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import ErrorQueryBoundary from './ErrorQueryBoundary';
 
 function Layout() {
   return (
     <ErrorQueryBoundary>
-      <p>Body</p>
+      <Outlet />
     </ErrorQueryBoundary>
   );
 }
