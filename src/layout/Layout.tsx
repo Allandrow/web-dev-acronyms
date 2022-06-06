@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import ErrorQueryBoundary from './ErrorQueryBoundary';
+import { ErrorQueryBoundary } from '@layout';
 
 function Layout() {
   return (

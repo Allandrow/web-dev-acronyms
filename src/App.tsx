@@ -1,5 +1,5 @@
-import Layout from 'layout/Layout';
-import Home from 'modules/home/Home';
+import { Layout } from '@layout';
+import Home from '@home';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
