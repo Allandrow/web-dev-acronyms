@@ -1,10 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import { ErrorQueryBoundary } from '@layout';
+import { Suspense } from 'react';
 
 function Layout() {
   return (
     <ErrorQueryBoundary>
-      <Outlet />
+      <Suspense fallback={<h2>Loading…</h2>}>
+        <Outlet />
+      </Suspense>
     </ErrorQueryBoundary>
   );
 }
