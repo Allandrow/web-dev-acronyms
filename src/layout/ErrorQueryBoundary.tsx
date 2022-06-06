@@ -1,4 +1,4 @@
-import Error from '@common';
+import { Error } from '@common';
 import { ReactNode } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { useQueryErrorResetBoundary } from 'react-query';
