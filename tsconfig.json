@@ -22,7 +22,8 @@
       "@layout": ["layout"],
       "@home": ["modules/home"],
       "@result": ["modules/result"],
-      "@meta": ["modules/meta"]
+      "@meta": ["modules/meta"],
+      "@data": ["data"]
     }
   },
   "include": ["src", "vite.config.ts"],
