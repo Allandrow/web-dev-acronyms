@@ -1,5 +1,9 @@
 function Header() {
-  return <header>Hello header</header>;
+  return (
+    <header>
+      <h1>Web Dev Acronyms</h1>
+    </header>
+  );
 }
 
 export default Header;

@@ -21,7 +21,8 @@
       "@common": ["modules/common"],
       "@layout": ["layout"],
       "@home": ["modules/home"],
-      "@result": ["modules/result"]
+      "@result": ["modules/result"],
+      "@meta": ["modules/meta"]
     }
   },
   "include": ["src", "vite.config.ts"],
