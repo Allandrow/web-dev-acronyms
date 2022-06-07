@@ -1,6 +1,6 @@
 import { FormEvent, SyntheticEvent, useState } from 'react';
 import { useQuery } from 'react-query';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -43,7 +43,7 @@ function Home() {
       <ul>
         {data.map((acronym: string) => (
           <li key={acronym}>
-            <a href={`acronym/${acronym}`}>{acronym}</a>
+            <Link to={`acronym/${acronym}`}>{acronym}</Link>
           </li>
         ))}
       </ul>
