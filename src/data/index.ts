@@ -1,4 +1,5 @@
 import acronymList from './acronymList';
-import acronymsDetails from './acronymsDetails';
+import acronymsDetails, { Acronym } from './acronymsDetails';
 
 export { acronymList, acronymsDetails };
+export type { Acronym };
