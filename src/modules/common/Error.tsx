@@ -1,11 +1,19 @@
 import { FallbackProps } from 'react-error-boundary';
+import { useNavigate } from 'react-router-dom';
 
 function Error({ error, resetErrorBoundary }: FallbackProps) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    resetErrorBoundary();
+    navigate('/');
+  };
+
   return (
     <main>
       <h1>Something went wrong…</h1>
       <p>{error.message}</p>
-      <button onClick={resetErrorBoundary} type="button">
+      <button onClick={handleClick} type="button">
         Return to the homepage
       </button>
     </main>
