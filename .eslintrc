@@ -22,7 +22,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "ignorePatterns": [".d.ts"],
+  "ignorePatterns": [".d.ts", "*.config.js"],
   "plugins": ["react", "@typescript-eslint", "simple-import-sort"],
   "rules": {
     "react/react-in-jsx-scope": "off",
