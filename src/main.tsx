@@ -15,7 +15,7 @@ import '@fontsource/roboto/700.css';
 
 // MSW WORKER
 worker.start({
-  onUnhandledRequest: 'warn',
+  onUnhandledRequest: 'bypass',
 });
 
 // React Query Client
