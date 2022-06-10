@@ -23,7 +23,8 @@
       "@home": ["modules/home"],
       "@result": ["modules/result"],
       "@meta": ["modules/meta"],
-      "@data": ["data"]
+      "@data": ["data"],
+      "@services": ["services"]
     }
   },
   "include": ["src", "vite.config.ts"],

@@ -1,13 +1,12 @@
 import { useQuery } from 'react-query';
 import { Link, useParams } from 'react-router-dom';
 import { Acronym } from '@data';
+import { getAcronym } from '@services';
 
 function Result() {
   const { id } = useParams();
 
-  const { data } = useQuery<Acronym>(['acronyms', id], () =>
-    fetch(`/acronym/${id}`).then((res) => res.json()),
-  );
+  const { data } = useQuery<Acronym>(['acronyms', id], () => getAcronym(id!));
 
   return (
     <main>

@@ -1,6 +1,7 @@
 import { FormEvent, SyntheticEvent, useState } from 'react';
 import { useQuery } from 'react-query';
 import { Link, useNavigate } from 'react-router-dom';
+import { getAcronyms } from '@services';
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,9 +17,7 @@ function Home() {
     navigate(`acronym/${searchTerm}`);
   };
 
-  const { data } = useQuery('acronyms', () =>
-    fetch('/acronyms').then((res) => res.json()),
-  );
+  const { data } = useQuery('acronyms', getAcronyms);
 
   return (
     <main>
