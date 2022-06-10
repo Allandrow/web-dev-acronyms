@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <header>
-      <h1>Web Dev Acronyms</h1>
+      <Link to="/">
+        <h1>Web Dev Acronyms</h1>
+      </Link>
     </header>
   );
 }
