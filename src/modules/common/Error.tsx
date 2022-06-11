@@ -6,7 +6,7 @@ function Error({ error, resetErrorBoundary }: FallbackProps) {
 
   const handleClick = () => {
     resetErrorBoundary();
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   return (
