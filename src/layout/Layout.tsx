@@ -5,15 +5,15 @@ import { Footer, Header } from '@common';
 
 function Layout() {
   return (
-    <ErrorQueryBoundary>
-      <div className="bg-dark h-screen text-white">
+    <div className="bg-dark-300 h-screen text-white flex flex-col">
+      <ErrorQueryBoundary>
         <Suspense fallback={<h2>Loading…</h2>}>
           <Header />
           <Outlet />
           <Footer />
         </Suspense>
-      </div>
-    </ErrorQueryBoundary>
+      </ErrorQueryBoundary>
+    </div>
   );
 }
 

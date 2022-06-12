@@ -20,7 +20,7 @@ function Home() {
   const { data } = useQuery('acronyms', getAcronyms);
 
   return (
-    <main>
+    <main className="flex-1">
       <p>
         Find the meaning of an acronym used in web development spheres, with
         additional resources to learn more about them !

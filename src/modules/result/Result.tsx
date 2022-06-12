@@ -9,7 +9,7 @@ function Result() {
   const { data } = useQuery<Acronym>(['acronyms', id], () => getAcronym(id!));
 
   return (
-    <main>
+    <main className="flex-1">
       <p>
         {data?.acronym} means {data?.definition}
       </p>
