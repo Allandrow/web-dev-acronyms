@@ -47,8 +47,8 @@
     "vite-tsconfig-paths": "^3.5.0"
   },
   "lint-staged": {
-    "**/*.[jt]s?(x)": "eslint --cache --fix",
-    "**/*.ts?(x)": "tsc-files --noEmit"
+    "./src/**/*.[jt]s?(x)": "eslint --cache --fix",
+    "./src/**/*.ts?(x)": "tsc-files --noEmit"
   },
   "msw": {
     "workerDirectory": "public"
