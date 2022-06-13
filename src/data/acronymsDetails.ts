@@ -1,38 +1,52 @@
 interface AcronymResource {
   title: string;
-  type: 'article' | 'video';
+  type?: 'article' | 'video' | 'podcast' | 'playlist';
+  url: string;
+  source: string;
+}
+
+interface Quote {
+  content: string;
+  author: string;
   url: string;
 }
 
 export interface Acronym {
   acronym: string;
   definition: string;
-  quote: string;
-  quoteAuthor: string;
+  quote: Quote;
   resources: AcronymResource[];
-  related: string[];
+  related?: string[];
 }
 
 const acronymsDetails: Acronym[] = [
   {
-    acronym: 'api',
-    definition: 'application programming interface',
-    quote:
-      'An application programming interface (API) is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software.[1] A document or standard that describes how to build or use such a connection or interface is called an API specification. A computer system that meets this standard is said to implement or expose an API. The term API may refer either to the specification or to the implementation.',
-    quoteAuthor: 'wikipedia',
+    acronym: 'a11y',
+    definition: 'Accessibility',
+    quote: {
+      content:
+        'Accessibility (a11y) is a measure of how accessible a computer system is to all people, including those with disabilities or impairments. It concerns both software and hardware and how they are configured in order to enable a disabled or impaired person to use that computer system successfully.',
+      author: 'techopedia.com',
+      url: 'https://www.techopedia.com/definition/10165/accessibility-a11y',
+    },
     resources: [
       {
-        title: 'What is an API?',
-        type: 'video',
-        url: 'https://www.youtube.com/watch?v=s7wmiS2mSXY',
+        title: 'The A11Y Project',
+        url: 'https://www.a11yproject.com/',
+        source: 'a11yproject.com',
       },
       {
-        title: 'What is an API, and how do developers use them ?',
-        type: 'article',
-        url: 'https://www.howtogeek.com/343877/what-is-an-api/',
+        title: 'A11YCasts with Rob Dodson',
+        type: 'playlist',
+        url: 'https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g',
+        source: 'youtube.com',
+      },
+      {
+        title: 'Accessibility',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
+        source: 'mdn.com',
       },
     ],
-    related: ['rest', 'soap', 'json'],
   },
 ];
 
