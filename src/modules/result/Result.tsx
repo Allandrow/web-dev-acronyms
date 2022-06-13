@@ -14,8 +14,8 @@ function Result() {
         {data?.acronym} means {data?.definition}
       </p>
       <h3>Quick description</h3>
-      <p>{data?.quote}</p>
-      <p>Quote from {data?.quoteAuthor}</p>
+      <p>{data?.quote.content}</p>
+      <p>Quote from {data?.quote.author}</p>
       <h3>Further learning</h3>
       <ul>
         {data?.resources.map((media) => (
@@ -26,14 +26,18 @@ function Result() {
           </li>
         ))}
       </ul>
-      <h3>Related acronyms</h3>
-      <ul>
-        {data?.related.map((item) => (
-          <li key={item}>
-            <Link to={`/acronym/${item}`}>{item}</Link>
-          </li>
-        ))}
-      </ul>
+      {data?.related && (
+        <>
+          <h3>Related acronyms</h3>
+          <ul>
+            {data?.related?.map((item) => (
+              <li key={item}>
+                <Link to={`/acronym/${item}`}>{item}</Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </main>
   );
 }
