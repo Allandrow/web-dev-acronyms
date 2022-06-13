@@ -23,7 +23,7 @@ function Home() {
     <main className="flex-1">
       <p>
         Find the meaning of an acronym used in web development spheres, with
-        additional resources to learn more about them !
+        extra resources to learn about them !
       </p>
       <form>
         <label htmlFor="acronymSearch">
@@ -32,6 +32,7 @@ function Home() {
             type="text"
             id="acronymSearch"
             placeholder="Search"
+            autoComplete="acronyms"
             onChange={handleChange}
           />
         </label>
