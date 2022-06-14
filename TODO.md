@@ -8,7 +8,7 @@
 - [ ]  BDD: Behavior Driven Development,
 - [ ]  BEM: Block Element Modifier,
 - [ ]  CD: Continuous Delivery,
-- [ ]  CDN: Content Delivery Network,
+- [X]  CDN: Content Delivery Network,
 - [ ]  CI: Continuous Integration,
 - [ ]  CLI: Command Line Interface,
 - [ ]  CLS: Cumulative Layout Shift,

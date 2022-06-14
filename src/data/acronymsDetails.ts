@@ -43,8 +43,39 @@ const acronymsDetails: Acronym[] = [
       },
       {
         title: 'Accessibility',
+        type: 'article',
         url: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
         source: 'mdn.com',
+      },
+    ],
+  },
+  {
+    acronym: 'cdn',
+    definition: 'Content Delivery Network',
+    quote: {
+      content:
+        'A content delivery network, is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and performance by distributing the service spatially relative to end users.[…] CDNs have grown to serve a large portion of the Internet content today, including web objects (text, graphics and scripts), downloadable objects (media files, software, documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social media sites',
+      author: 'wikipedia.com',
+      url: 'https://en.wikipedia.org/wiki/Content_delivery_network',
+    },
+    resources: [
+      {
+        title: 'CDN (Content Delivery Network) Explained in 60 Seconds',
+        type: 'video',
+        source: 'youtube.com',
+        url: 'https://www.youtube.com/watch?v=InhGahmVjdk',
+      },
+      {
+        title: 'What Is A CDN & Where Does It Shine?',
+        type: 'article',
+        source: 'cdnetworks.com',
+        url: 'https://www.cdnetworks.com/what-is-a-cdn/',
+      },
+      {
+        title: "What is a Content Delivery Network (CDN) - A Beginner's Guide",
+        type: 'article',
+        source: 'imagekit.io',
+        url: 'https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/',
       },
     ],
   },
