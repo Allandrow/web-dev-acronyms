@@ -79,6 +79,36 @@ const acronymsDetails: Acronym[] = [
       },
     ],
   },
+  {
+    acronym: 'cdd',
+    definition: 'component driven development',
+    quote: {
+      content:
+        'Component-Driven Development (CDD) is a development methodology that anchors the build process around components. It is a process that builds UIs from the “bottom up” by starting at the level of components and ending at the level of pages or screens.',
+      author: 'Tom Coleman - chromatic.com',
+      url: 'https://www.chromatic.com/blog/component-driven-development/',
+    },
+    resources: [
+      {
+        title: 'WTF is Component-Driven Development?',
+        type: 'article',
+        source: 'seancdavis.com',
+        url: 'https://www.seancdavis.com/posts/wtf-is-component-driven-development/',
+      },
+      {
+        title: 'A Guide to Component Driven Development',
+        type: 'article',
+        source: 'Jonathan Saring - itnext.io',
+        url: 'https://itnext.io/a-guide-to-component-driven-development-cdd-1516f65d8b55',
+      },
+      {
+        title: 'A Guide to Component Driven Development',
+        type: 'article',
+        source: 'Hiren Dhaduk - dzone.com',
+        url: 'https://dzone.com/articles/a-guide-to-component-driven-development-cdd',
+      },
+    ],
+  },
 ];
 
 export default acronymsDetails;

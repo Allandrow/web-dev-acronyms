@@ -5,6 +5,7 @@ const acronymList = [
   'BDD',
   'BEM',
   'CD',
+  'CDD',
   'CDN',
   'CI',
   'CLI',

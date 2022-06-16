@@ -8,6 +8,7 @@
 - [ ]  BDD: Behavior Driven Development,
 - [ ]  BEM: Block Element Modifier,
 - [ ]  CD: Continuous Delivery,
+- [X]  CDD : Component Driven Development
 - [X]  CDN: Content Delivery Network,
 - [ ]  CI: Continuous Integration,
 - [ ]  CLI: Command Line Interface,
@@ -18,7 +19,6 @@
 - [ ]  CTA: Call To Action,
 - [ ]  DOM: Document Object Model,
 - [ ]  E2E: End to end (test),
-- [ ]  ES: EcmaScript,
 - [ ]  GUI: Graphical User Interface,
 - [ ]  I18N: Internationalization,
 - [ ]  IDE: Integrated Development Environment,
