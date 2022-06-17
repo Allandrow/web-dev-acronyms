@@ -62,7 +62,7 @@ const acronymsDetails: Acronym[] = [
       {
         title: 'CDN (Content Delivery Network) Explained in 60 Seconds',
         type: 'video',
-        source: 'youtube.com',
+        source: 'LiquidWeb - youtube',
         url: 'https://www.youtube.com/watch?v=InhGahmVjdk',
       },
       {
@@ -109,6 +109,64 @@ const acronymsDetails: Acronym[] = [
       },
     ],
   },
+  {
+    acronym: 'dom',
+    definition: 'Document Object Model',
+    quote: {
+      content:
+        'The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. […] With the Document Object Model, programmers can build documents, navigate their structure, and add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM interfaces for the XML internal and external subsets have not yet been specified.',
+      author: 'w3.org',
+      url: 'https://www.w3.org/TR/REC-DOM-Level-1/introduction.html',
+    },
+    resources: [
+      {
+        title: 'What is DOM?',
+        source: 'codecademy.com',
+        type: 'article',
+        url: 'https://www.codecademy.com/resources/blog/what-is-dom/',
+      },
+      {
+        title: 'What is DOM?',
+        source: 'educative.io',
+        type: 'article',
+        url: 'https://www.educative.io/answers/what-is-dom',
+      },
+      {
+        title: 'Introduction to the DOM',
+        source: 'mdn',
+        type: 'article',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction',
+      },
+      {
+        title: 'What is the DOM',
+        source: 'LevelUpTuts - youtube',
+        type: 'video',
+        url: 'https://www.youtube.com/watch?v=i_T33FSl254',
+      },
+    ],
+  },
 ];
 
 export default acronymsDetails;
+
+/* AcronymTemplate
+
+{
+  acronym: '',
+  definition: '',
+  quote: {
+    content: '',
+    author: '',
+    url: ''
+  },
+  resources: [
+    {
+      title: '',
+      type: '',
+      url: '',
+      source: '',
+    }
+  ]
+},
+
+*/

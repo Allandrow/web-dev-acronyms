@@ -17,7 +17,7 @@
 - [ ]  CRON: Command Run On (UNIX Scheduler),
 - [ ]  CRUD: Create Read Update Delete,
 - [ ]  CTA: Call To Action,
-- [ ]  DOM: Document Object Model,
+- [X]  DOM: Document Object Model,
 - [ ]  E2E: End to end (test),
 - [ ]  GUI: Graphical User Interface,
 - [ ]  I18N: Internationalization,
