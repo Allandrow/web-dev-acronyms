@@ -1,23 +1,4 @@
-interface AcronymResource {
-  title: string;
-  type?: 'article' | 'video' | 'podcast' | 'playlist';
-  url: string;
-  source: string;
-}
-
-interface Quote {
-  content: string;
-  author: string;
-  url: string;
-}
-
-export interface Acronym {
-  acronym: string;
-  definition: string;
-  quote: Quote;
-  resources: AcronymResource[];
-  related?: string[];
-}
+import { Acronym } from '@data';
 
 const acronymsDetails: Acronym[] = [
   {
@@ -32,20 +13,22 @@ const acronymsDetails: Acronym[] = [
     resources: [
       {
         title: 'The A11Y Project',
+        type: 'website',
         url: 'https://www.a11yproject.com/',
-        source: 'a11yproject.com',
+        name: 'a11yproject.com',
       },
       {
         title: 'A11YCasts with Rob Dodson',
-        type: 'playlist',
+        type: 'video',
         url: 'https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g',
-        source: 'youtube.com',
+        source: 'Google Chrome Developers',
+        platform: 'youtube',
       },
       {
         title: 'Accessibility',
-        type: 'article',
+        type: 'documentation',
         url: 'https://developer.mozilla.org/en-US/docs/Web/Accessibility',
-        source: 'mdn.com',
+        name: 'mdn.com',
       },
     ],
   },
@@ -62,19 +45,20 @@ const acronymsDetails: Acronym[] = [
       {
         title: 'CDN (Content Delivery Network) Explained in 60 Seconds',
         type: 'video',
-        source: 'LiquidWeb - youtube',
+        source: 'LiquidWeb',
         url: 'https://www.youtube.com/watch?v=InhGahmVjdk',
+        platform: 'youtube',
       },
       {
         title: 'What Is A CDN & Where Does It Shine?',
         type: 'article',
-        source: 'cdnetworks.com',
+        author: 'cdnetworks.com',
         url: 'https://www.cdnetworks.com/what-is-a-cdn/',
       },
       {
         title: "What is a Content Delivery Network (CDN) - A Beginner's Guide",
         type: 'article',
-        source: 'imagekit.io',
+        author: 'imagekit.io',
         url: 'https://imagekit.io/blog/what-is-content-delivery-network-cdn-guide/',
       },
     ],
@@ -92,19 +76,19 @@ const acronymsDetails: Acronym[] = [
       {
         title: 'WTF is Component-Driven Development?',
         type: 'article',
-        source: 'seancdavis.com',
+        author: 'seancdavis.com',
         url: 'https://www.seancdavis.com/posts/wtf-is-component-driven-development/',
       },
       {
         title: 'A Guide to Component Driven Development',
         type: 'article',
-        source: 'Jonathan Saring - itnext.io',
+        author: 'Jonathan Saring - itnext.io',
         url: 'https://itnext.io/a-guide-to-component-driven-development-cdd-1516f65d8b55',
       },
       {
         title: 'A Guide to Component Driven Development',
         type: 'article',
-        source: 'Hiren Dhaduk - dzone.com',
+        author: 'Hiren Dhaduk - dzone.com',
         url: 'https://dzone.com/articles/a-guide-to-component-driven-development-cdd',
       },
     ],
@@ -121,19 +105,19 @@ const acronymsDetails: Acronym[] = [
     resources: [
       {
         title: 'What is DOM?',
-        source: 'codecademy.com',
+        author: 'codecademy.com',
         type: 'article',
         url: 'https://www.codecademy.com/resources/blog/what-is-dom/',
       },
       {
         title: 'What is DOM?',
-        source: 'educative.io',
+        author: 'educative.io',
         type: 'article',
         url: 'https://www.educative.io/answers/what-is-dom',
       },
       {
         title: 'Introduction to the DOM',
-        source: 'mdn',
+        author: 'mdn',
         type: 'article',
         url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction',
       },
@@ -142,6 +126,7 @@ const acronymsDetails: Acronym[] = [
         source: 'LevelUpTuts - youtube',
         type: 'video',
         url: 'https://www.youtube.com/watch?v=i_T33FSl254',
+        platform: 'youtube',
       },
     ],
   },
