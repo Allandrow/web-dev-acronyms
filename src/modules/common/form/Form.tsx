@@ -37,8 +37,8 @@ function Form() {
         type="submit"
         onClick={handleSubmit}
         disabled={searchTerm.trim().length === 0}
-        className="">
-        <img src={SearchIcon} alt="Search" className="w-6 h-6 cursor-pointer" />
+        className="cursor-pointer disabled:cursor-default">
+        <img src={SearchIcon} alt="Search" className="w-6 h-6" />
       </button>
     </form>
   );

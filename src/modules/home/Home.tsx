@@ -1,4 +1,5 @@
-import { Hero, Form } from '@home';
+import { Form } from '@common';
+import { Hero } from '@home';
 
 function Home() {
   return (
