@@ -5,7 +5,7 @@ import { Footer, Header } from '@common';
 
 function Layout() {
   return (
-    <div className="bg-neutral-900 h-screen text-white flex flex-col">
+    <div className="h-screen flex flex-col max-w-7xl m-auto">
       <ErrorQueryBoundary>
         <Suspense fallback={<h2>Loading…</h2>}>
           <Header />
