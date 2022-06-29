@@ -1,4 +1,4 @@
-import ErrorQueryBoundary from './ErrorQueryBoundary';
 import Layout from './Layout';
+import ErrorQueryBoundary from './ErrorQueryBoundary';
 
-export { ErrorQueryBoundary, Layout };
+export { Layout, ErrorQueryBoundary };

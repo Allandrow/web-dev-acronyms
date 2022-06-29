@@ -1,18 +1,22 @@
+import { Footer, Form, Header, Hero } from '@common';
+import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ErrorQueryBoundary } from '@layout';
-import { Suspense } from 'react';
-import { Footer, Header } from '@common';
 
 function Layout() {
   return (
     <div className="h-screen flex flex-col max-w-7xl m-auto">
-      <ErrorQueryBoundary>
-        <Suspense fallback={<h2>Loading…</h2>}>
-          <Header />
-          <Outlet />
-          <Footer />
-        </Suspense>
-      </ErrorQueryBoundary>
+      <Header />
+      <main className="flex-1">
+        <ErrorQueryBoundary>
+          <Hero />
+          <Form />
+          <Suspense fallback={<h2>Loading…</h2>}>
+            <Outlet />
+          </Suspense>
+        </ErrorQueryBoundary>
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
-import Error from './error/Error';
 import Header from './header/Header';
-import Footer from './footer/Footer';
+import Hero from './hero/Hero';
 import Form from './form/Form';
+import Footer from './footer/Footer';
+import Error from './error/Error';
 
-export { Error, Header, Footer, Form };
+export { Header, Hero, Form, Footer, Error };

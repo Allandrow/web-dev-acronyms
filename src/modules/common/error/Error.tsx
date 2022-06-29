@@ -10,13 +10,13 @@ function Error({ error, resetErrorBoundary }: FallbackProps) {
   };
 
   return (
-    <main>
+    <section>
       <h1>Something went wrong…</h1>
       <p>{error.message}</p>
       <button onClick={handleClick} type="button">
         Return to the homepage
       </button>
-    </main>
+    </section>
   );
 }
 

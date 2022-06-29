@@ -1,7 +1,7 @@
-import { useQuery } from 'react-query';
-import { Link, useParams } from 'react-router-dom';
 import { Acronym } from '@data';
 import { getAcronym } from '@services';
+import { useQuery } from 'react-query';
+import { Link, useParams } from 'react-router-dom';
 
 function Result() {
   const { id } = useParams();
@@ -9,7 +9,7 @@ function Result() {
   const { data } = useQuery<Acronym>(['acronyms', id], () => getAcronym(id!));
 
   return (
-    <main className="flex-1">
+    <section className="flex-1">
       <p>
         {data?.acronym} means {data?.definition}
       </p>
@@ -38,7 +38,7 @@ function Result() {
           </ul>
         </>
       )}
-    </main>
+    </section>
   );
 }
 
