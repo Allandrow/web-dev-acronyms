@@ -1,7 +1,6 @@
-import acronymList from './acronymList';
-import acronymsDetails from './acronymsDetails';
+import acronyms from './acronyms';
 import { links } from './externalLinks';
 import { Acronym } from './types';
 
-export { acronymList, acronymsDetails, links };
+export { acronyms, links };
 export type { Acronym };

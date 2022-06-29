@@ -1,17 +1,11 @@
 import { rest } from 'msw';
-import { acronymList, acronymsDetails } from '@data';
-
-const list = acronymList.sort().map((acronym) => acronym.toLowerCase());
+import { acronyms } from '@data';
 
 const handlers = [
-  rest.get('/acronyms', (_, res, ctx) => {
-    return res(ctx.status(200), ctx.json(list));
-  }),
-
   rest.get('/acronym/:id', (req, res, ctx) => {
     const { id } = req.params;
 
-    const acronym = acronymsDetails.find((item) => item.acronym === id);
+    const acronym = acronyms.find((item) => item.acronym === id);
 
     if (!acronym) {
       return res(
