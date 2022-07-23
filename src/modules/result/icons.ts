@@ -1,9 +1,7 @@
-import { ArticleIcon, DocumentationIcon, VideoIcon } from '@result';
-
 const iconMap = new Map();
 
-iconMap.set('video', VideoIcon);
-iconMap.set('article', ArticleIcon);
-iconMap.set('documentation', DocumentationIcon);
+iconMap.set('video', '/public/icons/video.svg');
+iconMap.set('article', '/public/icons/article.svg');
+iconMap.set('documentation', '/public/icons/documentation.svg');
 
 export { iconMap };
